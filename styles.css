@@ -10,7 +10,7 @@ body {
     color: #000;
     overflow-x: hidden; /* Prevent horizontal scroll */
     cursor: none; /* Hide default cursor */
-    min-height: 100; /* Ensure body takes full viewport height */
+    min-height: 100vh; /* Ensure body takes full viewport height */
 }
 
 /* Custom Cursor */
@@ -56,4 +56,50 @@ body {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
+
+
+}
+
+/* Hero Section */
+
+.hero {
+
+    height: 100vh;
+    display: flex;       /* Flexbox for centering */
+    align-items: center; /* Vertical centering */
+    padding-top: 100px; /* To avoid overlap with fixed header */
+    position: relative; 
+
+
+}
+
+.hero-content {
+
+    
+    width: 100vw;        /* Full screen width */
+    padding: 0 50px;    /* Padding to line it up with header */
+    position: relative; /* In case we want to add absolute elements later */
+}
+    
+
+.hero-title {
+    
+
+    font-size: clamp(60px, 8vw, 120px); /* clamp(min, preferred, max) and vw = viewport width*/
+    font-weight: 300;
+    line-height: 0.9;               /* Tight line height for large text */
+    margin-bottom: 40px;
+    letter-spacing: -0.02em;      /* Slightly tighten letter spacing, em for relative to font size */
+
+}
+
+.hero-description {
+
+    font-size: 18px;
+    line-height: 1.6; /* Increased line height for readability */
+    color: #666;
+    max-width: 400px; /* Limit width for better readability */
+    margin-left: auto; /* Align to the right */
+
+   
 }

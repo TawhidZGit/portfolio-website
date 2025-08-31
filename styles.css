@@ -39,6 +39,7 @@ body {
     padding: 30px 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background:  rgba(245,245,245,0.95); /* Semi-transparent background */
     backdrop-filter: blur(10px); /* Blur effect for background */
 
@@ -49,6 +50,7 @@ body {
     font-size: 24px;
     font-weight: 600;
 
+
 }
 
 .location-time{
@@ -56,6 +58,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
+
 
 
 }
